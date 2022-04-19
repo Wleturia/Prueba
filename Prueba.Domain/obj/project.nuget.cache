@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "5nZlIVMElPo38wOcLNwYUKxKdviXWtuAbgl4NIdsDuwuCMN+T6gWT4AvWUk6WIpOnG1ArPIxBZ7+Cyo3lx0+TA==",
+  "success": true,
+  "projectFilePath": "D:\\Tranzact\\Prueba\\Prueba.Domain\\Prueba.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\letur\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\letur\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
