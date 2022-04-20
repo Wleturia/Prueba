@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prueba.App", "..\Prueba.App
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prueba.Persistence", "..\Prueba.Persistence\Prueba.Persistence.csproj", "{59616716-AB73-46F1-A2AA-EF993CD70AD3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prueba.Common", "..\Prueba.Common\Prueba.Common.csproj", "{543961E2-5D91-474B-AA89-756455B537A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{59616716-AB73-46F1-A2AA-EF993CD70AD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59616716-AB73-46F1-A2AA-EF993CD70AD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59616716-AB73-46F1-A2AA-EF993CD70AD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{543961E2-5D91-474B-AA89-756455B537A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{543961E2-5D91-474B-AA89-756455B537A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{543961E2-5D91-474B-AA89-756455B537A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{543961E2-5D91-474B-AA89-756455B537A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
