@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Tranzact\\Prueba\\Prueba.Persistence\\Prueba.Persistence.csproj": {}
+    "D:\\Tranzact\\prueba2\\Prueba.Persistence\\Prueba.Persistence.csproj": {}
   },
   "projects": {
-    "D:\\Tranzact\\Prueba\\Prueba.Domain\\Prueba.Domain.csproj": {
+    "D:\\Tranzact\\prueba2\\Prueba.Domain\\Prueba.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Tranzact\\Prueba\\Prueba.Domain\\Prueba.Domain.csproj",
+        "projectUniqueName": "D:\\Tranzact\\prueba2\\Prueba.Domain\\Prueba.Domain.csproj",
         "projectName": "Prueba.Domain",
-        "projectPath": "D:\\Tranzact\\Prueba\\Prueba.Domain\\Prueba.Domain.csproj",
+        "projectPath": "D:\\Tranzact\\prueba2\\Prueba.Domain\\Prueba.Domain.csproj",
         "packagesPath": "C:\\Users\\letur\\.nuget\\packages\\",
-        "outputPath": "D:\\Tranzact\\Prueba\\Prueba.Domain\\obj\\",
+        "outputPath": "D:\\Tranzact\\prueba2\\Prueba.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\letur\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,18 +60,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Tranzact\\Prueba\\Prueba.Persistence\\Prueba.Persistence.csproj": {
+    "D:\\Tranzact\\prueba2\\Prueba.Persistence\\Prueba.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Tranzact\\Prueba\\Prueba.Persistence\\Prueba.Persistence.csproj",
+        "projectUniqueName": "D:\\Tranzact\\prueba2\\Prueba.Persistence\\Prueba.Persistence.csproj",
         "projectName": "Prueba.Persistence",
-        "projectPath": "D:\\Tranzact\\Prueba\\Prueba.Persistence\\Prueba.Persistence.csproj",
+        "projectPath": "D:\\Tranzact\\prueba2\\Prueba.Persistence\\Prueba.Persistence.csproj",
         "packagesPath": "C:\\Users\\letur\\.nuget\\packages\\",
-        "outputPath": "D:\\Tranzact\\Prueba\\Prueba.Persistence\\obj\\",
+        "outputPath": "D:\\Tranzact\\prueba2\\Prueba.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\letur\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -88,8 +88,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Tranzact\\Prueba\\Prueba.Domain\\Prueba.Domain.csproj": {
-                "projectPath": "D:\\Tranzact\\Prueba\\Prueba.Domain\\Prueba.Domain.csproj"
+              "D:\\Tranzact\\prueba2\\Prueba.Domain\\Prueba.Domain.csproj": {
+                "projectPath": "D:\\Tranzact\\prueba2\\Prueba.Domain\\Prueba.Domain.csproj"
               }
             }
           }
@@ -104,6 +104,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "LazyCache": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "System.Data.SQLite": {
               "target": "Package",
               "version": "[1.0.115.5, )"
@@ -124,7 +132,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -2,6 +2,7 @@
 using Prueba.Domain.VO;
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Prueba.App
 {
@@ -31,11 +32,11 @@ namespace Prueba.App
             }
         }
 
-        public (ICollection<Domain.VO.Product>, Exception) List()
+        public async Task<(ICollection<Domain.VO.Product>, Exception)> List()
         {
             try
             {
-                var entities = repo.GetAll();
+                var entities = await repo.GetAll();
                 return (Domain.Mapper.Product.ToProductVOCollection(entities), null);
             }
             catch (Exception err)

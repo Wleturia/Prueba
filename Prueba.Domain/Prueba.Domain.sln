@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32228.343
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prueba.Domain", "Prueba.Domain.csproj", "{F023B856-2A86-4A4C-BCCF-94FC3C265734}"
 EndProject
@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prueba.Delivery", "..\Prueb
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prueba.App", "..\Prueba.App\Prueba.App.csproj", "{EE373955-DB20-4ADB-8013-EF7667E6EF63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prueba.Persistence", "..\Prueba.Persistence\Prueba.Persistence.csproj", "{59616716-AB73-46F1-A2AA-EF993CD70AD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prueba.Persistence", "..\Prueba.Persistence\Prueba.Persistence.csproj", "{59616716-AB73-46F1-A2AA-EF993CD70AD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -122,11 +122,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Tranzact\\Prueba\\Prueba.Domain\\Prueba.Domain.csproj",
+      "projectUniqueName": "D:\\Tranzact\\prueba2\\Prueba.Domain\\Prueba.Domain.csproj",
       "projectName": "Prueba.Domain",
-      "projectPath": "D:\\Tranzact\\Prueba\\Prueba.Domain\\Prueba.Domain.csproj",
+      "projectPath": "D:\\Tranzact\\prueba2\\Prueba.Domain\\Prueba.Domain.csproj",
       "packagesPath": "C:\\Users\\letur\\.nuget\\packages\\",
-      "outputPath": "D:\\Tranzact\\Prueba\\Prueba.Domain\\obj\\",
+      "outputPath": "D:\\Tranzact\\prueba2\\Prueba.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\letur\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -175,7 +175,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

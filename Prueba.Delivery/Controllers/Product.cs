@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Prueba.Delivery.Controllers
 {
@@ -16,9 +17,9 @@ namespace Prueba.Delivery.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Domain.VO.Product> List()
+        public async Task<IEnumerable<Domain.VO.Product>> List()
         {
-            var (res, err) = _productUC.List();
+            var (res, err) = await _productUC.List();
             if (err != null)
                 throw new ApplicationException(err.Message);
             return res;

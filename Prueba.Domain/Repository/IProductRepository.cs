@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Prueba.Domain.Repository
 {
@@ -8,6 +9,6 @@ namespace Prueba.Domain.Repository
         public void Save(Entity.Product product);
         public void Edit(Entity.Product product);
         public Entity.Product GetById(int productId);
-        public ICollection<Entity.Product> GetAll();
+        public Task<ICollection<Entity.Product>> GetAll();
     }
 }

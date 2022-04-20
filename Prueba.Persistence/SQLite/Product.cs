@@ -1,6 +1,10 @@
-﻿using System;
+﻿using LazyCache;
+using Prueba.Persistence.External;
+using Prueba.Persistence.Services;
+using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
+using System.Threading.Tasks;
 
 namespace Prueba.Persistence.SQLite
 {
@@ -17,7 +21,7 @@ namespace Prueba.Persistence.SQLite
             throw new NotImplementedException();
         }
 
-        public ICollection<Domain.Entity.Product> GetAll()
+        public async Task<ICollection<Domain.Entity.Product>> GetAll()
         {
             var result = new List<Domain.Entity.Product>();
             var query = "SELECT * FROM products";
@@ -29,12 +33,13 @@ namespace Prueba.Persistence.SQLite
             while (reader.Read())
             {
                 var builder = new Domain.Builder.ProductBuilder();
-                builder.SetCode(reader["Code"].ToString());
+                builder.SetCode(reader["code"].ToString());
                 builder.SetId(Convert.ToInt32(reader["id"].ToString()));
-                builder.SetName(reader["Name"].ToString());
+                builder.SetName(reader["name"].ToString());
                 // Consultar caché
                 // Consultar servicio externo
-                result.Add(builder.GetProduct());
+                result.Add(await PopulateProduct(builder.GetProduct()));
+                //result.Add();
             }
             return result;
         }
@@ -53,8 +58,6 @@ namespace Prueba.Persistence.SQLite
                 result.Id = Convert.ToInt32(reader["id"].ToString());
                 result.Name = reader["Name"].ToString();
                 result.Code = reader["Code"].ToString();
-                // Consultar caché
-                // Consultar servicio externo
             }
             return result;
         }
@@ -66,6 +69,20 @@ namespace Prueba.Persistence.SQLite
             var rows = command.ExecuteNonQuery();
             if (rows != 1)
                 throw new Exception($"The insertion has affected {rows} rows");
+        }
+
+        private async Task<Domain.Entity.Product> PopulateProduct(Domain.Entity.Product product)
+        {
+            IAppCache cache = new CachingService();
+            var productCache = new ProductCache(cache);
+
+            var dataCache = productCache.CacheProduct(product);
+            var dataExternal = await ProductExternal.RetrieveExternal(product);
+
+            product.Rating = dataCache.Rating;
+            product.Reviews = dataCache.Reviews;
+            product.Photo = dataExternal.Foto;
+            return product;
         }
     }
 }
