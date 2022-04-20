@@ -17,7 +17,10 @@ namespace Prueba.Tests.Common
         [TestMethod]
         public void TestDateTimeInLog()
         {
-            throw new NotImplementedException();
+            var time = DateTime.Now.ToLongTimeString();
+            // log.Message($"Test {time}").Datetime
+            DateTime? logData = null;
+            Assert.AreEqual(time, logData);
         }
     }
 }
