@@ -7,6 +7,7 @@ namespace Prueba.Common
     public class Log : ILog
     {
         private readonly string pathE;
+        public DateTime dateTime;
 
         public Log()
         {
@@ -20,29 +21,30 @@ namespace Prueba.Common
             }
         }
 
-        public void Error(string message)
+        public DateTime Error(string message)
         {
-            WriteMessage("ERROR", message);
+            return WriteMessage("ERROR", message);
         }
 
-        public void Message(string message)
+        public DateTime Message(string message)
         {
-            WriteMessage("INFO", message);
+            return WriteMessage("INFO", message);
         }
 
-        public void Success(string message)
+        public DateTime Success(string message)
         {
-            WriteMessage("SUCCESS", message);
+            return WriteMessage("SUCCESS", message);
         }
 
-        private void WriteMessage(string type, string logMessage)
+        private DateTime WriteMessage(string type, string logMessage)
         {
             using StreamWriter txtWriter = File.AppendText(pathE + "\\" + "log.txt");
+            dateTime = DateTime.Now;
 
             try
             {
                 txtWriter.Write($"\r\n{type} Log: ");
-                txtWriter.WriteLine($"{DateTime.Now.ToLongTimeString()} {DateTime.Now.ToLongDateString()}");
+                txtWriter.WriteLine($"{dateTime.ToLongTimeString()} {dateTime.ToLongDateString()}");
                 txtWriter.WriteLine($"Context: {logMessage}");
                 txtWriter.WriteLine("************************************************************************");
             }
@@ -50,6 +52,7 @@ namespace Prueba.Common
             {
                 Console.WriteLine("Couldn't write log: " + ex.Message);
             }
+            return dateTime;
         }
     }
 }

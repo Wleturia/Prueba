@@ -17,10 +17,10 @@ namespace Prueba.Tests.Common
         [TestMethod]
         public void TestDateTimeInLog()
         {
-            var time = DateTime.Now.ToLongTimeString();
-            // log.Message($"Test {time}").Datetime
-            DateTime? logData = null;
-            Assert.AreEqual(time, logData);
+            var time = DateTime.Now;
+            DateTime logData = log.Message($"Test {time}");
+            // logData.Ticks  Varia por milésimas
+            Assert.AreEqual(time.ToString(), logData.ToString());
         }
     }
 }
