@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-namespace Prueba.Common
+﻿namespace Prueba.Common
 {
     public class Program
     {

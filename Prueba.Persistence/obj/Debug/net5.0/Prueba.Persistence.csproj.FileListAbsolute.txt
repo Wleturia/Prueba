@@ -51,7 +51,7 @@ D:\Tranzact\prueba2\Prueba.Persistence\obj\Debug\net5.0\Prueba.Persistence.Assem
 D:\Tranzact\prueba2\Prueba.Persistence\obj\Debug\net5.0\Prueba.Persistence.csproj.CoreCompileInputs.cache
 D:\Tranzact\prueba2\Prueba.Persistence\obj\Debug\net5.0\Prueba.Persistence.csproj.CopyComplete
 D:\Tranzact\prueba2\Prueba.Persistence\obj\Debug\net5.0\Prueba.Persistence.dll
-D:\Tranzact\prueba2\Prueba.Persistence\obj\Debug\net5.0\ref\Prueba.Persistence.dll
+D:\Tranzact\prueba2\Prueba.Persistence\obj\Debug\net5.0\refint\Prueba.Persistence.dll
 D:\Tranzact\prueba2\Prueba.Persistence\obj\Debug\net5.0\Prueba.Persistence.pdb
 D:\Tranzact\prueba2\Prueba.Persistence\obj\Debug\net5.0\Prueba.Persistence.genruntimeconfig.cache
-D:\Tranzact\prueba2\Prueba.Persistence\obj\Debug\net5.0\refint\Prueba.Persistence.dll
+D:\Tranzact\prueba2\Prueba.Persistence\obj\Debug\net5.0\ref\Prueba.Persistence.dll

@@ -533,6 +533,16 @@
           "bin/placeholder/Prueba.App.dll": {}
         }
       },
+      "Prueba.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Prueba.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Prueba.Common.dll": {}
+        }
+      },
       "Prueba.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -1678,6 +1688,11 @@
       "path": "../Prueba.App/Prueba.App.csproj",
       "msbuildProject": "../Prueba.App/Prueba.App.csproj"
     },
+    "Prueba.Common/1.0.0": {
+      "type": "project",
+      "path": "../Prueba.Common/Prueba.Common.csproj",
+      "msbuildProject": "../Prueba.Common/Prueba.Common.csproj"
+    },
     "Prueba.Domain/1.0.0": {
       "type": "project",
       "path": "../Prueba.Domain/Prueba.Domain.csproj",
@@ -1692,6 +1707,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "Prueba.App >= 1.0.0",
+      "Prueba.Common >= 1.0.0",
       "Prueba.Domain >= 1.0.0",
       "Prueba.Persistence >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
@@ -1726,6 +1742,9 @@
           "projectReferences": {
             "D:\\Tranzact\\prueba2\\Prueba.App\\Prueba.App.csproj": {
               "projectPath": "D:\\Tranzact\\prueba2\\Prueba.App\\Prueba.App.csproj"
+            },
+            "D:\\Tranzact\\prueba2\\Prueba.Common\\Prueba.Common.csproj": {
+              "projectPath": "D:\\Tranzact\\prueba2\\Prueba.Common\\Prueba.Common.csproj"
             },
             "D:\\Tranzact\\prueba2\\Prueba.Domain\\Prueba.Domain.csproj": {
               "projectPath": "D:\\Tranzact\\prueba2\\Prueba.Domain\\Prueba.Domain.csproj"

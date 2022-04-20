@@ -4,6 +4,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Prueba.Delivery.Middleware;
+using System.Diagnostics;
 
 namespace Prueba.Delivery
 {
@@ -19,6 +21,10 @@ namespace Prueba.Delivery
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var log = new Common.Log();
+            var measureTime = new MeasureTime(log);
+            services.AddSingleton(measureTime);
+
             Persistence.Connection.Up();
             var conn = Persistence.Connection.GetInstance();
             var productUsecase = new App.Product(new Persistence.SQLite.Product(conn));
@@ -32,8 +38,12 @@ namespace Prueba.Delivery
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(
+            IApplicationBuilder app, IWebHostEnvironment env,
+              DiagnosticListener diagnosticListenerSource, MeasureTime diagnosticObserver)
         {
+            diagnosticListenerSource.Subscribe((System.IObserver<System.Collections.Generic.KeyValuePair<string, object>>)diagnosticObserver);
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

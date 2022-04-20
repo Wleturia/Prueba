@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Prueba.App\Prueba.App.csproj" />
+    <ProjectReference Include="..\Prueba.Common\Prueba.Common.csproj" />
     <ProjectReference Include="..\Prueba.Domain\Prueba.Domain.csproj" />
     <ProjectReference Include="..\Prueba.Persistence\Prueba.Persistence.csproj" />
   </ItemGroup>

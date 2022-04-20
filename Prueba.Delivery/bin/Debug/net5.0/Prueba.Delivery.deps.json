@@ -34,6 +34,7 @@
       "Prueba.Delivery/1.0.0": {
         "dependencies": {
           "Prueba.App": "1.0.0",
+          "Prueba.Common": "1.0.0",
           "Prueba.Domain": "1.0.0",
           "Prueba.Persistence": "1.0.0",
           "Swashbuckle.AspNetCore": "5.6.3",
@@ -689,6 +690,14 @@
         },
         "compile": {
           "Prueba.App.dll": {}
+        }
+      },
+      "Prueba.Common/1.0.0": {
+        "runtime": {
+          "Prueba.Common.dll": {}
+        },
+        "compile": {
+          "Prueba.Common.dll": {}
         }
       },
       "Prueba.Domain/1.0.0": {
@@ -2696,6 +2705,11 @@
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
     "Prueba.App/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Prueba.Common/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

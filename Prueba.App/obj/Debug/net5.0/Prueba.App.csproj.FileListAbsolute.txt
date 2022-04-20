@@ -57,7 +57,7 @@ D:\Tranzact\prueba2\Prueba.App\obj\Debug\net5.0\Prueba.App.AssemblyInfo.cs
 D:\Tranzact\prueba2\Prueba.App\obj\Debug\net5.0\Prueba.App.csproj.CoreCompileInputs.cache
 D:\Tranzact\prueba2\Prueba.App\obj\Debug\net5.0\Prueba.App.csproj.CopyComplete
 D:\Tranzact\prueba2\Prueba.App\obj\Debug\net5.0\Prueba.App.dll
-D:\Tranzact\prueba2\Prueba.App\obj\Debug\net5.0\ref\Prueba.App.dll
+D:\Tranzact\prueba2\Prueba.App\obj\Debug\net5.0\refint\Prueba.App.dll
 D:\Tranzact\prueba2\Prueba.App\obj\Debug\net5.0\Prueba.App.pdb
 D:\Tranzact\prueba2\Prueba.App\obj\Debug\net5.0\Prueba.App.genruntimeconfig.cache
-D:\Tranzact\prueba2\Prueba.App\obj\Debug\net5.0\refint\Prueba.App.dll
+D:\Tranzact\prueba2\Prueba.App\obj\Debug\net5.0\ref\Prueba.App.dll

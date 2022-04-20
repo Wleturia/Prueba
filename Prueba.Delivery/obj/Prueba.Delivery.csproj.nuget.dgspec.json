@@ -65,6 +65,60 @@
         }
       }
     },
+    "D:\\Tranzact\\prueba2\\Prueba.Common\\Prueba.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Tranzact\\prueba2\\Prueba.Common\\Prueba.Common.csproj",
+        "projectName": "Prueba.Common",
+        "projectPath": "D:\\Tranzact\\prueba2\\Prueba.Common\\Prueba.Common.csproj",
+        "packagesPath": "C:\\Users\\letur\\.nuget\\packages\\",
+        "outputPath": "D:\\Tranzact\\prueba2\\Prueba.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\letur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\Tranzact\\prueba2\\Prueba.Delivery\\Prueba.Delivery.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -91,6 +145,9 @@
             "projectReferences": {
               "D:\\Tranzact\\prueba2\\Prueba.App\\Prueba.App.csproj": {
                 "projectPath": "D:\\Tranzact\\prueba2\\Prueba.App\\Prueba.App.csproj"
+              },
+              "D:\\Tranzact\\prueba2\\Prueba.Common\\Prueba.Common.csproj": {
+                "projectPath": "D:\\Tranzact\\prueba2\\Prueba.Common\\Prueba.Common.csproj"
               },
               "D:\\Tranzact\\prueba2\\Prueba.Domain\\Prueba.Domain.csproj": {
                 "projectPath": "D:\\Tranzact\\prueba2\\Prueba.Domain\\Prueba.Domain.csproj"
