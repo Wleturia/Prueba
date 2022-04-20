@@ -9,6 +9,6 @@ namespace Prueba.Domain.Repository
         public void Save(Entity.Product product);
         public void Edit(Entity.Product product);
         public Entity.Product GetById(int productId);
-        public Task<ICollection<Entity.Product>> GetAll();
+        public ICollection<Entity.Product> GetAll();
     }
 }

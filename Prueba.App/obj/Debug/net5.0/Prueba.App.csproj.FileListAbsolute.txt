@@ -11,7 +11,6 @@ D:\Tranzact\prueba2\Prueba.App\bin\Debug\net5.0\Prueba.App.deps.json
 D:\Tranzact\prueba2\Prueba.App\bin\Debug\net5.0\Prueba.App.runtimeconfig.json
 D:\Tranzact\prueba2\Prueba.App\bin\Debug\net5.0\Prueba.App.runtimeconfig.dev.json
 D:\Tranzact\prueba2\Prueba.App\bin\Debug\net5.0\Prueba.App.dll
-D:\Tranzact\prueba2\Prueba.App\bin\Debug\net5.0\ref\Prueba.App.dll
 D:\Tranzact\prueba2\Prueba.App\bin\Debug\net5.0\Prueba.App.pdb
 D:\Tranzact\prueba2\Prueba.App\bin\Debug\net5.0\AutoMapper.dll
 D:\Tranzact\prueba2\Prueba.App\bin\Debug\net5.0\EntityFramework.SqlServer.dll
@@ -61,3 +60,4 @@ D:\Tranzact\prueba2\Prueba.App\obj\Debug\net5.0\Prueba.App.dll
 D:\Tranzact\prueba2\Prueba.App\obj\Debug\net5.0\ref\Prueba.App.dll
 D:\Tranzact\prueba2\Prueba.App\obj\Debug\net5.0\Prueba.App.pdb
 D:\Tranzact\prueba2\Prueba.App\obj\Debug\net5.0\Prueba.App.genruntimeconfig.cache
+D:\Tranzact\prueba2\Prueba.App\obj\Debug\net5.0\refint\Prueba.App.dll

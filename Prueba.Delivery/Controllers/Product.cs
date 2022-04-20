@@ -17,9 +17,9 @@ namespace Prueba.Delivery.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<Domain.VO.Product>> List()
+        public IEnumerable<Domain.VO.Product> List()
         {
-            var (res, err) = await _productUC.List();
+            var (res, err) = _productUC.List();
             if (err != null)
                 throw new ApplicationException(err.Message);
             return res;

@@ -7,7 +7,6 @@ D:\Tranzact\prueba2\Prueba.Persistence\bin\Debug\net5.0\Prueba.Persistence.deps.
 D:\Tranzact\prueba2\Prueba.Persistence\bin\Debug\net5.0\Prueba.Persistence.runtimeconfig.json
 D:\Tranzact\prueba2\Prueba.Persistence\bin\Debug\net5.0\Prueba.Persistence.runtimeconfig.dev.json
 D:\Tranzact\prueba2\Prueba.Persistence\bin\Debug\net5.0\Prueba.Persistence.dll
-D:\Tranzact\prueba2\Prueba.Persistence\bin\Debug\net5.0\ref\Prueba.Persistence.dll
 D:\Tranzact\prueba2\Prueba.Persistence\bin\Debug\net5.0\Prueba.Persistence.pdb
 D:\Tranzact\prueba2\Prueba.Persistence\bin\Debug\net5.0\AutoMapper.dll
 D:\Tranzact\prueba2\Prueba.Persistence\bin\Debug\net5.0\EntityFramework.SqlServer.dll
@@ -55,3 +54,4 @@ D:\Tranzact\prueba2\Prueba.Persistence\obj\Debug\net5.0\Prueba.Persistence.dll
 D:\Tranzact\prueba2\Prueba.Persistence\obj\Debug\net5.0\ref\Prueba.Persistence.dll
 D:\Tranzact\prueba2\Prueba.Persistence\obj\Debug\net5.0\Prueba.Persistence.pdb
 D:\Tranzact\prueba2\Prueba.Persistence\obj\Debug\net5.0\Prueba.Persistence.genruntimeconfig.cache
+D:\Tranzact\prueba2\Prueba.Persistence\obj\Debug\net5.0\refint\Prueba.Persistence.dll

@@ -4,7 +4,9 @@ using Prueba.Persistence.Services;
 using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
+using System.Linq;
 using System.Threading.Tasks;
+using System.Threading.Tasks.Dataflow;
 
 namespace Prueba.Persistence.SQLite
 {
@@ -21,7 +23,7 @@ namespace Prueba.Persistence.SQLite
             throw new NotImplementedException();
         }
 
-        public async Task<ICollection<Domain.Entity.Product>> GetAll()
+        public ICollection<Domain.Entity.Product> GetAll()
         {
             var result = new List<Domain.Entity.Product>();
             var query = "SELECT * FROM products";
@@ -30,16 +32,29 @@ namespace Prueba.Persistence.SQLite
             if (!reader.HasRows)
                 return result;
 
+            var preResult = new List<Domain.Entity.Product>();
             while (reader.Read())
             {
                 var builder = new Domain.Builder.ProductBuilder();
                 builder.SetCode(reader["code"].ToString());
                 builder.SetId(Convert.ToInt32(reader["id"].ToString()));
                 builder.SetName(reader["name"].ToString());
-                // Consultar caché
-                // Consultar servicio externo
-                result.Add(await PopulateProduct(builder.GetProduct()));
-                //result.Add();
+                preResult.Add(builder.GetProduct());
+            }
+
+            List<Task<Domain.Entity.Product>> TaskList = new List<Task<Domain.Entity.Product>>();
+            Parallel.ForEach(preResult.Cast<Domain.Entity.Product>(), (currentElement) =>
+            {
+                var task = PopulateProduct(currentElement);
+                if (task.Status == TaskStatus.Created)
+                    task.Start();
+                TaskList.Add(task);
+            });
+
+            Task.WaitAll(TaskList.ToArray());
+            foreach (var task in TaskList)
+            {
+                result.Add(task.Result);
             }
             return result;
         }
@@ -73,6 +88,8 @@ namespace Prueba.Persistence.SQLite
 
         private async Task<Domain.Entity.Product> PopulateProduct(Domain.Entity.Product product)
         {
+            // Consultar caché
+            // Consultar servicio externo
             IAppCache cache = new CachingService();
             var productCache = new ProductCache(cache);
 

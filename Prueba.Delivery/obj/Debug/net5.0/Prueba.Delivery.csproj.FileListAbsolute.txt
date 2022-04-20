@@ -17,7 +17,6 @@ D:\Tranzact\prueba2\Prueba.Delivery\bin\Debug\net5.0\Prueba.Delivery.deps.json
 D:\Tranzact\prueba2\Prueba.Delivery\bin\Debug\net5.0\Prueba.Delivery.runtimeconfig.json
 D:\Tranzact\prueba2\Prueba.Delivery\bin\Debug\net5.0\Prueba.Delivery.runtimeconfig.dev.json
 D:\Tranzact\prueba2\Prueba.Delivery\bin\Debug\net5.0\Prueba.Delivery.dll
-D:\Tranzact\prueba2\Prueba.Delivery\bin\Debug\net5.0\ref\Prueba.Delivery.dll
 D:\Tranzact\prueba2\Prueba.Delivery\bin\Debug\net5.0\Prueba.Delivery.pdb
 D:\Tranzact\prueba2\Prueba.Delivery\bin\Debug\net5.0\AutoMapper.dll
 D:\Tranzact\prueba2\Prueba.Delivery\bin\Debug\net5.0\EntityFramework.SqlServer.dll
@@ -65,3 +64,4 @@ D:\Tranzact\prueba2\Prueba.Delivery\obj\Debug\net5.0\Prueba.Delivery.dll
 D:\Tranzact\prueba2\Prueba.Delivery\obj\Debug\net5.0\ref\Prueba.Delivery.dll
 D:\Tranzact\prueba2\Prueba.Delivery\obj\Debug\net5.0\Prueba.Delivery.pdb
 D:\Tranzact\prueba2\Prueba.Delivery\obj\Debug\net5.0\Prueba.Delivery.genruntimeconfig.cache
+D:\Tranzact\prueba2\Prueba.Delivery\obj\Debug\net5.0\refint\Prueba.Delivery.dll

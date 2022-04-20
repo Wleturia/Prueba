@@ -32,11 +32,11 @@ namespace Prueba.App
             }
         }
 
-        public async Task<(ICollection<Domain.VO.Product>, Exception)> List()
+        public (ICollection<Domain.VO.Product>, Exception) List()
         {
             try
             {
-                var entities = await repo.GetAll();
+                var entities = repo.GetAll();
                 return (Domain.Mapper.Product.ToProductVOCollection(entities), null);
             }
             catch (Exception err)
